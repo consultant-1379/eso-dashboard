@@ -1,0 +1,42 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  steelblue;
+
+$title-color:      rgba(255, 255, 255, 0.7);
+$stories-color:    rgba(255, 255, 255, 0.5);
+
+$meter-background:  darken($background-color, 7%);
+
+// ----------------------------------------------------------------------------
+// Widget-sprint-progress styles
+// ----------------------------------------------------------------------------
+.widget-sprint-progress {
+
+  background-color: $background-color;
+
+  input.meter {
+    background-color: $meter-background;
+    color: #fff;
+  }
+
+  .title {
+    color: $title-color;
+  }
+
+  .stories-progressing {
+    color: $stories-color;
+    font-size: 15px;
+  }
+
+  .stories-finished {
+    color: $stories-color;
+    font-size: 15px;
+  }
+
+  .clickLink{
+    margin-top: -8%;
+    margin-bottom: 3%;
+  }
+
+}

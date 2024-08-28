@@ -1,0 +1,86 @@
+<% product = ENV['PRODUCT'].upcase %>
+<% content_for :title do %><%= product %> Dashboard
+<% end %>
+
+<script type='text/javascript'>
+    $(function () {
+        Dashing.widget_base_dimensions = [370, 355];
+        Dashing.numColumns = 5
+    });
+</script>
+
+
+<div class="gridster">
+  <ul>
+
+    <!-- Project Name -->
+    <li data-row="1" data-col="1" data-sizex="4" data-sizey="1">
+      <div data-view="ProjectName"></div>
+    </li>
+
+    <!-- Clock  -->
+    <li data-switcher-interval="5000" data-row="1" data-col="5" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>
+    </li>
+
+    <!-- Remaining days in sprint
+    <li data-row="1" data-col="4" data-sizex="1" data-sizey="1">
+      <div data-view="JiraSprintRemainingDays" data-id="jiraDays"></div>
+    </li>
+    -->
+
+     <!-- ESO Jobs Build History -->
+    <li data-row="1" data-col="2" data-sizex="2" data-sizey="1">
+      <div data-id="esoJobsHistory" data-view="EsoJobs" data-max_samples="5" data-show_job_titles="true" data-sample_spacers="true" data-show_build_number="true" data-flash_failed_builds="true"></div>
+    </li>
+
+    <!-- Test Cases -->
+    <li data-row="2" data-col="3" data-sizex="2" data-sizey="1">
+      <div data-id="tests_status" data-view="TestsStatus"></div>
+    </li>
+
+
+    <!-- Code reviews count
+    <li data-row="2" data-col="4" data-sizex="1" data-sizey="1">
+      <div data-id="codeReviewCount" data-view="GerritCodeReviewCount" data-title="Pending Code Reviews" ></div>
+    -->
+
+    <!-- Bug count -->
+    <li  id="bugCounter" data-switcher-interval="10000" data-row="2" data-col="5" data-sizex="1" data-sizey="1">
+      <div data-id="bugs" data-view="Number" data-title="Bugs" ></div>
+    </li>
+
+    <!-- Sprint Stories' Progress -->
+    <li id="OverallBoard" data-row="3" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="SprintProgress" data-id="SprintProgress"></div>
+    </li>
+
+
+    <!-- Anvil Sprint Stories' Progress -->
+    <li id="AnvilBoard" data-row="3" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-view="SprintProgress" data-id="AnvilSprintProgress"></div>
+    </li>
+
+    <!-- Autobots Sprint Stories' Progress -->
+    <li id="AutobotsBoard" data-row="3" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-view="SprintProgress" data-id="AutobotsSprintProgress"></div>
+    </li>
+
+    <!-- Inferno Sprint Stories' Progress -->
+    <li id="InfernoBoard" data-row="3" data-col="4" data-sizex="1" data-sizey="1">
+      <div data-view="SprintProgress" data-id="InfernoSprintProgress"></div>
+    </li>
+
+    <!-- Brahma Sprint Stories' Progress -->
+    <li id="BrahmaBoard" data-row="3" data-col="5" data-sizex="1" data-sizey="1">
+      <div data-view="SprintProgress" data-id="BrahmaSprintProgress"></div>
+    </li>
+
+    <!-- Jenkins Build Status
+    <li data-switcher-interval="60000" data-row="3" data-col="1" data-sizex="5" data-sizey="1">
+      <div data-id="jenkinsBuildStatus" data-view="JenkinsBuildStatus" data-title="Jenkins"></div>
+    </li>
+    -->
+    <br/><br/>
+  </ul>
+</div>

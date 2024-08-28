@@ -1,0 +1,41 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color: #4F5259;
+
+$moreinfo-color: rgba(255, 255, 255, 0.3);
+
+
+// ----------------------------------------------------------------------------
+// Widget-GoogleGauge styles
+// ----------------------------------------------------------------------------
+.widget-google-gauge {
+
+  background-color: $background-color;
+  position: relative;
+
+  text {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+
+  .gauge {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+
+  .more-info {
+    color: $moreinfo-color;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 0;
+  }
+
+  
+  .updated-at {
+    color: $moreinfo-color;
+  }
+
+}

@@ -1,0 +1,62 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #222222;
+$title-color:       rgba(255, 255, 255, 0.7);
+$label-color:       #FFFFFF;
+$value-color:       #000000;
+
+ //----------------------------------------------------------------------------
+ //Widget-text styles
+ //----------------------------------------------------------------------------
+.widget-eso-jobs {
+
+  background-color: $background-color;
+
+  .title {
+    color: $title-color;
+  }
+
+  .jenkins-status {
+    font-size: 45px;
+  }
+
+  .updated-at {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  ol, ul {
+    margin: 0 15px;
+    text-align: left;
+    color: $label-color;
+  }
+
+  li {
+    margin-bottom: 5px;
+    font-size: 34px;
+   word-wrap: break-word;
+  }
+
+  .label {
+    color: $label-color;
+  }
+
+  .value {
+   margin-left: 30px;
+   font-weight: 600;
+    color: $value-color;
+ }
+
+  .updated-at {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .build-failed {
+    display: none;
+  }
+
+  .fa {
+    font-size: 10em;
+    color: $label-color;
+  }
+}
